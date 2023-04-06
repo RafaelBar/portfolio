@@ -1,0 +1,126 @@
+//GENERAL
+html {
+  overflow: overlay;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+.clickable-text {
+  cursor: pointer;
+
+  &:hover {
+    color: $app-primary;
+  }
+}
+
+.clickable-area {
+  cursor: pointer;
+
+  &:hover {
+    background-color: $app-primary;
+  }
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: $app-white;
+
+  &:hover {
+    color: $app-primary;
+  }
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: $app-primary; 
+  box-shadow: transparent; 
+  -webkit-box-shadow: transparent; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: $app-primary; 
+}
+
+//GENERAL
+
+//COLORS
+.text-white {
+  color: $app-white;
+}
+
+.text-primary {
+  color: $app-primary;
+}
+
+//COLORS
+
+//SIZE
+$max-size: 60;
+
+@for $i from 10 through $max-size {
+  .font-size-#{$i} {
+    font-size: $i + px;
+  }
+}
+
+//SIZE
+
+//PADDING/MARGIN
+$max-size: 20;
+
+@for $i from 0 through $max-size {
+  .padding-#{$i} {
+    padding: $i + px;
+  }
+  .margin-#{$i} {
+    margin: $i + px;
+  }
+  .padding-top-#{$i} {
+    padding-top: $i + px;
+  }
+  .padding-bottom-#{$i} {
+    padding-bottom: $i + px;
+  }
+  .padding-right-#{$i} {
+    padding-right: $i + px;
+  }
+  .padding-left-#{$i} {
+    padding-left: $i + px;
+  }
+  .margin-top-#{$i} {
+    margin-top: $i + px;
+  }
+  .margin-bottom-#{$i} {
+    margin-bottom: $i + px;
+  }
+  .margin-right-#{$i} {
+    margin-right: $i + px;
+  }
+  .margin-left-#{$i} {
+    margin-left: $i + px;
+  }
+
+}
+
+//PADDING/MARGIN
