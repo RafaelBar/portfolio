@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <portfolio></portfolio>
-  </div>
+  <portfolio></portfolio>
 </template>
 
 <script lang="ts">

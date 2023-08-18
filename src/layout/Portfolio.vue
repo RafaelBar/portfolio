@@ -55,6 +55,10 @@ $strip-size: 20px;
   position: fixed;
   z-index: 800;
 
+  @include mobile {
+    display: none;
+  }
+
   &.top,
   &.bottom {
     height: $strip-size;
