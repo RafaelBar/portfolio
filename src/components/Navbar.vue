@@ -13,7 +13,8 @@
           >CV CHALLENGE</router-link
         >
       </span>
-      <burger @toggleMenu="isMenuOpen = !isMenuOpen"></burger>
+      <span class="text-white poppins font-size-30">New website coming soon!</span>
+      <!-- <burger @toggleMenu="isMenuOpen = !isMenuOpen"></burger> -->
     </div>
   </div>
 </template>

@@ -17,25 +17,24 @@
         ></span>
         <span> {{ day }}</span>
       </p>
-      <div class="mouse"></div>
+      <div v-if="!isUnderConstraction" class="mouse"></div>
     </section>
-
-    <section class="about flex-center">
+    <div v-if="!isUnderConstraction">
+      <section class="about flex-center">
       <p class="poppins text-white font-size-30">
-        🍻 Cheers, I am <span class="text-primary">Rafael</span>,
-        a frontend developer currently living in Tel Aviv, Israel.
-        I have got a plenty expiriance in the web development industry.
-        I am frontend oriented as it is my pation to move some pixels.  
+        🍻 Cheers, I am <span class="text-primary">Rafael</span>, a frontend
+        developer currently living in Tel Aviv, Israel. I have got a plenty
+        expiriance in the web development industry. I am frontend oriented as it
+        is my pation to move some pixels.
       </p>
-    </section>
+      </section>
 
-    <section class="experience flex-center">
-    
+      <section class="experience flex-center">
       <h3 class="poppins text-primary font-size-40">Experience</h3>
 
       <div class="job text-white">
         <h4>WAYOUT, Tel Aviv - Senior Frontend Developer</h4>
-        <p class="year"> 2019 - PRESENT</p>
+        <p class="year">2019 - PRESENT</p>
         <ul>
           <li>implement</li>
           <li>Development</li>
@@ -44,7 +43,7 @@
 
       <div class="job text-white">
         <h4>WAYOUT, Tel Aviv - Senior Frontend Developer</h4>
-        <p class="year"> 2019 - PRESENT</p>
+        <p class="year">2019 - PRESENT</p>
         <ul>
           <li>implement</li>
           <li>Development</li>
@@ -53,7 +52,7 @@
 
       <div class="job text-white">
         <h4>WAYOUT, Tel Aviv - Senior Frontend Developer</h4>
-        <p class="year"> 2019 - PRESENT</p>
+        <p class="year">2019 - PRESENT</p>
         <ul>
           <li>implement</li>
           <li>Development</li>
@@ -62,13 +61,14 @@
 
       <div class="job text-white">
         <h4>WAYOUT, Tel Aviv - Senior Frontend Developer</h4>
-        <p class="year"> 2019 - PRESENT</p>
+        <p class="year">2019 - PRESENT</p>
         <ul>
           <li>implement</li>
           <li>Development</li>
         </ul>
       </div>
-    </section>
+      </section>
+    </div>
   </div>
 </template>
 
@@ -77,8 +77,10 @@ import { Options, Vue } from "vue-class-component";
 
 @Options({
   components: {},
+  props: { isUnderConstraction: Boolean },
 })
 export default class Home extends Vue {
+  isUnderConstraction: boolean;
   word = "";
   words = [
     "A beautiful",
