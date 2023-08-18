@@ -7,7 +7,7 @@ import { Options, Vue } from "vue-class-component";
 import Home from "./Home.vue";
 
 @Options({
-  components: {Home},
+  components: { Home },
 })
 export default class Construction extends Vue {}
 </script>

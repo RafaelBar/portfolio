@@ -7,13 +7,13 @@
           >HOME</router-link
         >
 
-        <router-link
-          class="poppins text-white font-size-19 padding-20"
-          to="/cv"
+        <router-link class="poppins text-white font-size-19 padding-20" to="/cv"
           >CV CHALLENGE</router-link
         >
       </span>
-      <span class="text-white poppins font-size-30">New website coming soon!</span>
+      <span class="text-white poppins font-size-30"
+        >New website coming soon!
+      </span>
       <!-- <burger @toggleMenu="isMenuOpen = !isMenuOpen"></burger> -->
     </div>
   </div>
@@ -59,7 +59,7 @@ $nav-size: 88%;
       color: $app-primary;
     }
 
-    .poppins{
+    .poppins {
       white-space: nowrap;
     }
   }
